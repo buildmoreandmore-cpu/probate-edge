@@ -82,7 +82,7 @@ export default function DashboardPage() {
         <select
           value={countyFilter}
           onChange={(e) => setCountyFilter(e.target.value)}
-          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent/50"
+          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/20"
         >
           <option value="all">ALL COUNTIES</option>
           {COUNTIES.map((c) => (
@@ -95,7 +95,7 @@ export default function DashboardPage() {
         <select
           value={statusFilter}
           onChange={(e) => setStatusFilter(e.target.value)}
-          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent/50"
+          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/20"
         >
           <option value="all">ALL STATUS</option>
           <option value="new">NEW</option>
@@ -107,7 +107,7 @@ export default function DashboardPage() {
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as SortField)}
-          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent/50"
+          className="bg-bg-surface border border-border rounded px-3 py-2 text-xs font-mono text-text-primary focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/20"
         >
           <option value="deal_score">SORT: SCORE</option>
           <option value="filing_date">SORT: NEWEST</option>

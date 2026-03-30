@@ -7,7 +7,7 @@ function ScoreBadge({ score, size = "sm" }: { score: number; size?: "sm" | "lg" 
   const dot = score >= 75 ? "bg-score-high" : score >= 50 ? "bg-score-mid" : "bg-score-low";
   const textSize = size === "lg" ? "text-lg" : "text-sm";
   return (
-    <span className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded ${bg} ${color} font-mono ${textSize} font-bold`}>
+    <span className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded ${bg} ${color} font-mono ${textSize} font-semibold`}>
       <span className={`w-2 h-2 rounded-full ${dot}`} />
       {score}
     </span>
@@ -57,7 +57,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-bg">
       {/* Nav */}
-      <nav className="border-b border-border bg-bg/80 backdrop-blur-sm sticky top-0 z-50">
+      <nav className="border-b border-border bg-bg/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="font-mono text-xl font-bold text-accent">
             PROBATE<span className="text-text-primary">EDGE</span>

@@ -25,7 +25,7 @@ export default function DashboardNav() {
   const isDemo = typeof document !== "undefined" && document.cookie.includes("demo_mode=true");
 
   return (
-    <nav className="border-b border-border bg-bg/80 backdrop-blur-sm sticky top-0 z-50">
+    <nav className="border-b border-border bg-bg/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       {isDemo && (
         <div className="bg-accent/10 border-b border-accent/20 px-6 py-1.5 text-center">
           <span className="text-accent text-xs font-mono">

@@ -44,7 +44,7 @@ export default function LeadDetailPage() {
           {lead.deal_score !== null && (
             <div className="text-center">
               <div
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-bg font-mono text-2xl font-bold ${scoreColor}`}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-bg-hover font-mono text-2xl font-bold ${scoreColor}`}
               >
                 <span className={`w-3 h-3 rounded-full ${dotColor}`} />
                 {lead.deal_score}
@@ -55,7 +55,7 @@ export default function LeadDetailPage() {
         </div>
 
         {lead.deal_score_reason && (
-          <div className="bg-bg border border-border rounded p-3">
+          <div className="bg-bg-hover border border-border rounded p-3">
             <div className="text-text-muted text-xs font-mono mb-1">AI ANALYSIS</div>
             <p className="text-text-primary text-sm">{lead.deal_score_reason}</p>
           </div>

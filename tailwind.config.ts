@@ -10,25 +10,25 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#0B1120",
-          surface: "#111827",
-          hover: "#1F2937",
+          DEFAULT: "#FFFFFF",
+          surface: "#F8FAFC",
+          hover: "#F1F5F9",
         },
         border: {
-          DEFAULT: "#1E2A3F",
+          DEFAULT: "#E2E8F0",
         },
         accent: {
-          DEFAULT: "#F5A623",
-          dim: "#D4901E",
+          DEFAULT: "#4F46E5",
+          dim: "#4338CA",
         },
         score: {
-          high: "#10B981",
-          mid: "#FBBF24",
-          low: "#EF4444",
+          high: "#059669",
+          mid: "#D97706",
+          low: "#DC2626",
         },
         text: {
-          primary: "#F1F3F8",
-          muted: "#6B7A99",
+          primary: "#0F172A",
+          muted: "#64748B",
         },
       },
       fontFamily: {
