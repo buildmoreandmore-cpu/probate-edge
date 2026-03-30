@@ -10,30 +10,30 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#0A0A0F",
-          surface: "#12121A",
-          hover: "#1A1A28",
+          DEFAULT: "#0B1120",
+          surface: "#111827",
+          hover: "#1F2937",
         },
         border: {
-          DEFAULT: "#1E1E2E",
+          DEFAULT: "#1E2A3F",
         },
         accent: {
-          DEFAULT: "#00FF94",
-          dim: "#00CC76",
+          DEFAULT: "#F5A623",
+          dim: "#D4901E",
         },
         score: {
-          high: "#00FF94",
-          mid: "#FFB800",
-          low: "#FF4444",
+          high: "#10B981",
+          mid: "#FBBF24",
+          low: "#EF4444",
         },
         text: {
-          primary: "#F0F0F0",
-          muted: "#6B6B80",
+          primary: "#F1F3F8",
+          muted: "#6B7A99",
         },
       },
       fontFamily: {
-        mono: ["Space Mono", "JetBrains Mono", "monospace"],
-        sans: ["DM Sans", "system-ui", "sans-serif"],
+        mono: ["Space Grotesk", "Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },

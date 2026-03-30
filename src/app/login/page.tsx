@@ -119,6 +119,28 @@ export default function LoginPage() {
             </div>
           </form>
 
+          <div className="relative my-6">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-border" />
+            </div>
+            <div className="relative flex justify-center text-xs">
+              <span className="bg-bg-surface px-2 text-text-muted font-mono">OR</span>
+            </div>
+          </div>
+
+          <button
+            onClick={() => {
+              document.cookie = "demo_mode=true; path=/; max-age=86400";
+              router.push("/dashboard");
+            }}
+            className="w-full border border-accent/30 text-accent font-mono font-bold py-2.5 rounded hover:bg-accent/10 transition-colors"
+          >
+            TRY DEMO
+          </button>
+          <p className="text-text-muted text-[10px] font-mono text-center mt-2">
+            Explore the dashboard with sample Metro Atlanta leads
+          </p>
+
           <p className="text-text-muted text-xs font-mono text-center mt-6">
             No account?{" "}
             <Link href="/signup" className="text-accent hover:underline">

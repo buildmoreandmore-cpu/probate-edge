@@ -29,6 +29,8 @@ export async function middleware(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const isDemo = request.cookies.get("demo_mode")?.value === "true";
+
   const isAuthPage =
     request.nextUrl.pathname === "/login" ||
     request.nextUrl.pathname === "/signup";
@@ -38,13 +40,13 @@ export async function middleware(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/alerts") ||
     request.nextUrl.pathname.startsWith("/account");
 
-  if (!user && isProtectedRoute) {
+  if (!user && !isDemo && isProtectedRoute) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     return NextResponse.redirect(url);
   }
 
-  if (user && isAuthPage) {
+  if ((user || isDemo) && isAuthPage) {
     const url = request.nextUrl.clone();
     url.pathname = "/dashboard";
     return NextResponse.redirect(url);

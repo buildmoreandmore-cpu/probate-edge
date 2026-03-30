@@ -17,12 +17,25 @@ export default function DashboardNav() {
   const supabase = createClient();
 
   async function handleSignOut() {
+    document.cookie = "demo_mode=; path=/; max-age=0";
     await supabase.auth.signOut();
     router.push("/");
   }
 
+  const isDemo = typeof document !== "undefined" && document.cookie.includes("demo_mode=true");
+
   return (
     <nav className="border-b border-border bg-bg/80 backdrop-blur-sm sticky top-0 z-50">
+      {isDemo && (
+        <div className="bg-accent/10 border-b border-accent/20 px-6 py-1.5 text-center">
+          <span className="text-accent text-xs font-mono">
+            DEMO MODE — Sample data only.{" "}
+            <Link href="/signup" className="underline hover:text-accent/80">
+              Sign up for real leads
+            </Link>
+          </span>
+        </div>
+      )}
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/dashboard" className="font-mono text-lg font-bold text-accent">

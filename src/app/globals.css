@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #0A0A0F;
-  --foreground: #F0F0F0;
+  --background: #0B1120;
+  --foreground: #F1F3F8;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 ::selection {
-  background: rgba(0, 255, 148, 0.2);
-  color: #00FF94;
+  background: rgba(245, 166, 35, 0.2);
+  color: #F5A623;
 }
 
 ::-webkit-scrollbar {
@@ -25,16 +25,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0F;
+  background: #0B1120;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1E1E2E;
+  background: #1E2A3F;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2E2E3E;
+  background: #2E3A4F;
 }
 
 @layer utilities {

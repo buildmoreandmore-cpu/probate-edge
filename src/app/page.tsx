@@ -97,10 +97,10 @@ export default function LandingPage() {
             START FREE TRIAL
           </Link>
           <Link
-            href="/pricing"
-            className="border border-border text-text-muted px-8 py-3 rounded font-mono hover:border-accent/30 hover:text-text-primary transition-colors text-lg"
+            href="/login"
+            className="border border-accent/30 text-accent px-8 py-3 rounded font-mono hover:bg-accent/10 transition-colors text-lg"
           >
-            VIEW PRICING
+            TRY DEMO
           </Link>
         </div>
       </section>
